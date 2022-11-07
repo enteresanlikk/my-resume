@@ -1,6 +1,7 @@
 <script setup>
 import { defineProps } from "vue";
 
+import NotFound from "@/components/Resume/Shared/NotFound.vue";
 import Item from "./Item.vue";
 
 const props = defineProps({
@@ -12,32 +13,21 @@ const props = defineProps({
 </script>
 
 <template>
-  <section class="experience" id="experience">
-    <div class="experience--container">
-      <div class="experiences">
-        <Item v-for="(item, key) in items" :key="key" :item="item" />
-      </div>
-    </div>
+  <section class="experiences" id="experiences">
+    <Item
+      v-if="items.length > 0"
+      v-for="(item, key) in items"
+      :key="key"
+      :item="item"
+    />
+    <NotFound v-else title="Experience" />
   </section>
 </template>
 
 <style lang="scss">
-.experience {
-  .experiences {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  &--item {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-
-    &--title {
-      margin: 0;
-      padding: 0;
-    }
-  }
+.experiences {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 </style>

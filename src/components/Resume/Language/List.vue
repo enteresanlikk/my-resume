@@ -1,6 +1,7 @@
 <script setup>
 import { defineProps } from "vue";
 
+import NotFound from "@/components/Resume/Shared/NotFound.vue";
 import Item from "./Item.vue";
 
 const props = defineProps({
@@ -13,18 +14,20 @@ const props = defineProps({
 
 <template>
   <section class="languages" id="languages">
-    <div class="languages--items">
-      <Item v-for="(item, key) in items" :key="key" :item="item" />
-    </div>
+    <Item
+      v-if="items.length > 0"
+      v-for="(item, key) in items"
+      :key="key"
+      :item="item"
+    />
+    <NotFound v-else title="Language" />
   </section>
 </template>
 
 <style lang="scss">
 .languages {
-  &--items {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 </style>

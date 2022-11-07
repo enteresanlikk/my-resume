@@ -22,3 +22,16 @@ const props = defineProps({
     </span>
   </div>
 </template>
+
+<style lang="scss">
+.experience--item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  &--title {
+    margin: 0;
+    padding: 0;
+  }
+}
+</style>
