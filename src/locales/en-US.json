@@ -1,3 +1,17 @@
 {
-    
+    "header": {
+        "home": "Home",
+        "profile": "Profile",
+        "experiences": "Experiences",
+        "educations": "Educations",
+        "skills": "Skills",
+        "languages": "Languages"
+    },
+    "not_found": {
+        "title": "Page not found",
+        "description": "The page you are looking for does not exist.",
+        "link": {
+            "text": "Go to home page"
+        }
+    }
 }

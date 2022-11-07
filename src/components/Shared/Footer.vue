@@ -13,7 +13,21 @@ const year = computed(() =>
 <template>
   <footer class="footer">
     <div class="container">
-      <p>&copy; {{ year }}</p>
+      <p class="footer--description">&copy; {{ year }} <LocaleSwitcher /></p>
     </div>
   </footer>
 </template>
+
+<style lang="scss">
+.footer {
+  padding: 20px 0;
+
+  &--description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    gap: 10px;
+  }
+}
+</style>

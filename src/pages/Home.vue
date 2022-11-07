@@ -1,17 +1,18 @@
 <script setup>
+import { useStore } from "vuex";
+import { computed } from "vue";
+
 import Profile from "@/components/Resume/Profile.vue";
-import Experience from "@/components/Resume/Experience.vue";
-import Education from "@/components/Resume/Education.vue";
-import Skills from "@/components/Resume/Skills.vue";
-import Languages from "@/components/Resume/Languages.vue";
+
+const store = useStore();
+
+const profile = computed(() => store.getters["resume/getProfile"]);
 </script>
 
 <template>
-  <section class="home container">
-    <Profile />
-    <Experience />
-    <Education />
-    <Skills />
-    <Languages />
+  <section class="home">
+    <div class="container">
+      <Profile :profile="profile" />
+    </div>
   </section>
 </template>

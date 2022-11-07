@@ -3,5 +3,6 @@ export default {
   defaultLocale: "en-US",
   locales: {
     "en-US": "English",
+    "tr-TR": "Türkçe",
   },
 };

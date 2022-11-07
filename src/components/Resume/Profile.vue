@@ -1,9 +1,7 @@
 <script setup>
-import { useStore } from "vuex";
-import { computed } from "vue";
+import { defineProps } from "vue";
 
-const store = useStore();
-const profile = computed(() => store.getters["resume/getProfile"]);
+defineProps(["profile"]);
 </script>
 
 <template>

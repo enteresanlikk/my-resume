@@ -17,7 +17,7 @@ watch(
 </script>
 
 <template>
-  <div class="locale-switcher">
+  <div class="locale-switcher" v-if="availableLocales.length > 1">
     <select v-model="locale">
       <option v-for="(lang, i) in availableLocales" :key="i" :value="lang">
         {{ i18nConstants.locales[lang] }}
@@ -25,3 +25,13 @@ watch(
     </select>
   </div>
 </template>
+
+<style lang="scss">
+.locale-switcher {
+  select {
+    border: 0;
+    border-bottom: 1px solid var(--black);
+    color: var(--black);
+  }
+}
+</style>
