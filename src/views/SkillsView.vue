@@ -2,7 +2,7 @@
 import { useStore } from "vuex";
 import { computed } from "vue";
 
-import Skills from "@/components/Resume/Skill/List.vue";
+import Skills from "@/components/Resume/Skill/SkillList.vue";
 
 const store = useStore();
 

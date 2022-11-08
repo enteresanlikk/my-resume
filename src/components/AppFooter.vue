@@ -1,6 +1,6 @@
 <script setup>
 import { computed } from "vue";
-import LocaleSwitcher from "@/components/Shared/LocaleSwitcher.vue";
+import LocaleSwitcher from "@/components/AppLocaleSwitcher.vue";
 
 const startYear = 2022;
 const currentYear = new Date().getFullYear();

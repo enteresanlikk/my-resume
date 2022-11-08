@@ -2,7 +2,7 @@
 import { useStore } from "vuex";
 import { computed } from "vue";
 
-import Profile from "@/components/Resume/Profile.vue";
+import ResumeProfile from "@/components/Resume/ResumeProfile.vue";
 
 const store = useStore();
 
@@ -12,7 +12,7 @@ const profile = computed(() => store.getters["resume/getProfile"]);
 <template>
   <section class="home">
     <div class="container">
-      <Profile :profile="profile" />
+      <ResumeProfile :profile="profile" />
     </div>
   </section>
 </template>

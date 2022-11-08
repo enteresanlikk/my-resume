@@ -2,7 +2,7 @@
 import { useStore } from "vuex";
 import { computed } from "vue";
 
-import Languages from "@/components/Resume/Language/List.vue";
+import Languages from "@/components/Resume/Language/LanguageList.vue";
 
 const store = useStore();
 

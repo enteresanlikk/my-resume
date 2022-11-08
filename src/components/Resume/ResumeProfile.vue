@@ -1,7 +1,12 @@
 <script setup>
 import { defineProps } from "vue";
 
-defineProps(["profile"]);
+defineProps({
+  profile: {
+    type: Object,
+    required: true,
+  },
+});
 </script>
 
 <template>
@@ -11,8 +16,16 @@ defineProps(["profile"]);
     </div>
 
     <h1 class="profile--name" v-if="profile.name" v-html="profile.name"></h1>
-    <span class="profile--title" v-if="profile.title" v-html="profile.title"></span>
-    <p class="profile--description text-center" v-if="profile.bio" v-html="profile.bio"></p>
+    <span
+      class="profile--title"
+      v-if="profile.title"
+      v-html="profile.title"
+    ></span>
+    <p
+      class="profile--description text-center"
+      v-if="profile.bio"
+      v-html="profile.bio"
+    ></p>
 
     <p class="profile--social-medias">
       <a

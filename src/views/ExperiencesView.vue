@@ -2,7 +2,7 @@
 import { useStore } from "vuex";
 import { computed } from "vue";
 
-import Experiences from "@/components/Resume/Experience/List.vue";
+import Experiences from "@/components/Resume/Experience/ExperienceList.vue";
 
 const store = useStore();
 const experiences = computed(() => store.getters["resume/getExperiences"]);

@@ -5,7 +5,7 @@ export default {
       image: "https://avatars.githubusercontent.com/u/23117378?v=4",
       name: "Bilal Demir",
       title: "Full Stack Developer",
-      bio: "He was born in <b>Istanbul</b> in <b>1999</b> and continues to live in Istanbul. He was interested in <b>models</b>, <b>origami</b> and <b>electronic devices</b> until high school and developed projects of his own. He studied <b>Web Programming</b> in high school. He initially worked in the <b>Q/A</b> team where he completed his compulsory internship training in the last year of high school. After graduating from high school, he moved to the software team. During his transition to the software team, he worked as a <b>back-end developer</b>. He won the <b>Computer Programming Department</b> thanks to his high school ranking and continued to work at the same time. He took part as a <b>full stack developer</b> in the initiative of his friend whom he met from university. After completing his associate degree education, he prepared for <b>VPE(DGS)</b> for one year and won the <b>Management Information Systems Department</b>. While completing his undergraduate education, he continued to work in the software team at the same time. He finished his undergraduate education with the <b>first place in the faculty</b> and continued to work in the software team after graduation.<br><u>He still continues to work actively and develop projects.</u>",
+      bio: "<b>1999</b> yılında <b>İstanbul</b>’da doğdu ve İstanbul’da yaşamaya devam ediyor. Liseye kadar <b>maketlere</b>, <b>origamilere</b> ve <b>elektronik aletlere</b> ilgi duydu ve bunlarla ilgili kendi çapında projeler geliştirdi. Lisede <b>Web Programcılığı Bölümü</b>nü okudu. Lise son sınıftaki zorunlu staj eğitimini gördüğü yerde başlangıçta <b>Q/A</b> ekibinde çalıştı. Liseden mezun olduktan sonra yazılım ekibine geçiş yaptı. Yazılım ekibine geçiş yaptığı dönemde <b>back-end geliştirici</b> olarak çalıştı. Lisedeki <b>okul birinciliği</b> sayesinde <b>Bilgisayar Programcılığı Bölümü</b>nü kazandı ve aynı zamanda çalışmaya devam etti. Üniversiteden tanıştığı arkadaşının girişiminde <b>full stack geliştirici</b> olarak görev aldı. Ön lisans eğitimini tamamladıktan sonra bir sene <b>DGS</b>’ye hazırlandı ve <b>Yönetim Bilişim Sistemleri Bölümü</b>nü kazandı. Lisans eğitimini tamamlerken aynı anda yazılım ekibinde çalışmaya devam etti. Lisans eğitimini <b>fakülte birinciliği</b> ile bitirdi ve mezuniyet sonrası yazılım ekibinde çalışmaya devam etti.<br /> <u>Hala aktif olarak çalışmaya ve projeler geliştirmeye devam etmekte</u>.",
       socialMedias: [
         {
           name: "GitHub",
@@ -26,11 +26,11 @@ export default {
             import.meta.url
           ).href,
         },
-        position: "Back-End Developer",
+        position: "Back-End Geliştirici",
         startDate: "2017/06",
         endDate: null,
         summary:
-          "He developed projects with .NET MVC. It made it dynamic by making API connections and database connections to the projects.",
+          ".NET MVC ile projeler geliştirdi. Projelere API bağlantıları ve veri tabanı bağlantıları yaparak dinamik hale getirdi.",
       },
       {
         company: {
@@ -40,11 +40,11 @@ export default {
             import.meta.url
           ).href,
         },
-        position: "Full Stack Developer",
+        position: "Full Stack Geliştirici",
         startDate: "2019/11",
         endDate: "2020/08",
         summary:
-          "He worked as a full stack developer in web projects for Genjitsu, a startup.",
+          "Bir girişim olan Genjitsu için web projelerinde full stack geliştirici olarak görev aldı.",
       },
       {
         company: {
@@ -57,35 +57,35 @@ export default {
         position: "Q/A Tester",
         startDate: "2016/08",
         endDate: "2017/06",
-        summary: "He did the end-user tests and data entry.",
+        summary: "Son kullanıcı testlerini ve veri girişlerini yaptı.",
       },
     ],
     educations: [
       {
         school: {
-          name: "Altınbaş University",
+          name: "Altınbaş Üniversitesi",
           logo: new URL(
             "@/assets/img/educations/altinbas-university.jpg",
             import.meta.url
           ).href,
         },
-        area: "Management Information Systems",
-        studyType: "Bachelor's Degree",
+        area: "Yönetim Bilişim Sistemleri",
+        studyType: "Lisans",
         startYear: "2020",
         endYear: "2022",
         gpa: "3.59/4.00",
-        note: "He graduated with the first place in the faculty.",
+        note: "Fakülte birinciliği ile mezun oldu",
       },
       {
         school: {
-          name: "İstanbul University",
+          name: "İstanbul Üniversitesi",
           logo: new URL(
             "@/assets/img/educations/istanbul-university.jpg",
             import.meta.url
           ).href,
         },
-        area: "Computer Programming",
-        studyType: "Associate Degree",
+        area: "Bilgisayar Programcılığı",
+        studyType: "Ön Lisans",
         startYear: "2017",
         endYear: "2019",
         gpa: "3.63/4.00",
@@ -93,16 +93,16 @@ export default {
       },
       {
         school: {
-          name: "Bahçelievler Martyr Osman Yıldız Vocational and Technical Anatolian High School",
+          name: "Bahçelievler Şehit Osman Yıldız Mesleki ve Teknik Anadolu Lisesi",
           logo: new URL("@/assets/img/educations/meb.jpg", import.meta.url)
             .href,
         },
-        area: "Web Programming",
-        studyType: "High School",
+        area: "Web Programcılığı",
+        studyType: "Lise",
         startYear: "2013",
         endYear: "2017",
         gpa: "89/100",
-        note: "He graduated with first place in the school.",
+        note: "Okul birinciliği ile mezun oldu",
       },
     ],
     skills: [

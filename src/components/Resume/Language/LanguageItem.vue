@@ -1,9 +1,9 @@
 <script setup>
 import { defineProps } from "vue";
 
-import Level from "@/components/Resume/Shared/Level.vue";
+import Level from "@/components/Resume/ResumeLevel.vue";
 
-const props = defineProps({
+defineProps({
   item: {
     type: Object,
     required: true,
@@ -14,15 +14,20 @@ const props = defineProps({
 <template>
   <div class="language--item">
     <div class="language--item--left">
-      <img v-if="item.flag" :src="item.flag" :alt="item.name" class="language--item--logo">
+      <img
+        v-if="item.flag"
+        :src="item.flag"
+        :alt="item.name"
+        class="language--item--logo"
+      />
     </div>
 
     <div class="language--item--right">
       <span class="language--item--name">
-      <b>
-        {{ item.name }}
-      </b>
-    </span>
+        <b>
+          {{ item.name }}
+        </b>
+      </span>
 
       <Level v-if="item.level" :level="item.level" />
 
@@ -41,7 +46,6 @@ const props = defineProps({
   gap: 10px;
 
   &--left {
-
   }
 
   &--right {

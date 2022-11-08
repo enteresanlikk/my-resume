@@ -1,8 +1,8 @@
 <script setup>
 import { defineProps } from "vue";
-import Level from "@/components/Resume/Shared/Level.vue";
+import Level from "@/components/Resume/ResumeLevel.vue";
 
-const props = defineProps({
+defineProps({
   item: {
     type: Object,
     required: true,
@@ -12,13 +12,17 @@ const props = defineProps({
 
 <template>
   <div class="skill--item">
-
     <div class="skill--item--top">
-      <img v-if="item.icon" :src="item.icon" :alt="item.name" class="skill--item--logo">
+      <img
+        v-if="item.icon"
+        :src="item.icon"
+        :alt="item.name"
+        class="skill--item--logo"
+      />
 
       <h2 class="skill--item--name">
         {{ item.name }}
-    </h2>
+      </h2>
 
       <Level v-if="item.level" :level="item.level" />
     </div>
@@ -29,11 +33,16 @@ const props = defineProps({
       :key="childKey"
     >
       <div class="skill--item--top">
-        <img v-if="child.icon" :src="child.icon" :alt="child.name" class="skill--item--logo">
+        <img
+          v-if="child.icon"
+          :src="child.icon"
+          :alt="child.name"
+          class="skill--item--logo"
+        />
 
         <h3 class="skill--item--name">
-        {{ child.name }}
-      </h3>
+          {{ child.name }}
+        </h3>
 
         <Level v-if="child.level" :level="child.level" />
       </div>

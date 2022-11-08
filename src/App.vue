@@ -1,9 +1,14 @@
 <script setup>
-import DefaultLayout from "@/layouts/Default.vue";
+import Header from "@/components/AppHeader.vue";
+import Footer from "@/components/AppFooter.vue";
 </script>
 
 <template>
-  <DefaultLayout>
+  <Header />
+
+  <main class="main">
     <RouterView />
-  </DefaultLayout>
+  </main>
+
+  <Footer />
 </template>

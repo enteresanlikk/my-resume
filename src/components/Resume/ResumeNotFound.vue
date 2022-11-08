@@ -1,7 +1,7 @@
 <script setup>
 import { defineProps } from "vue";
 
-const props = defineProps({
+defineProps({
   title: {
     type: String,
     required: true,
@@ -11,7 +11,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="resume-not-found">
-        <h3>{{ title }} not found...</h3>
-    </div>
+  <div class="resume-not-found">
+    <h3>{{ title }} not found...</h3>
+  </div>
 </template>

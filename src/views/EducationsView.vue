@@ -2,7 +2,7 @@
 import { useStore } from "vuex";
 import { computed } from "vue";
 
-import Educations from "@/components/Resume/Education/List.vue";
+import Educations from "@/components/Resume/Education/EducationList.vue";
 
 const store = useStore();
 

@@ -8,32 +8,32 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      component: () => import("@/pages/Home.vue"),
+      component: () => import("@/views/HomeView.vue"),
     },
     {
       path: "/experiences",
       name: "experiences",
-      component: () => import("@/pages/Experiences.vue"),
+      component: () => import("@/views/ExperiencesView.vue"),
     },
     {
       path: "/educations",
       name: "educations",
-      component: () => import("@/pages/Educations.vue"),
+      component: () => import("@/views/EducationsView.vue"),
     },
     {
       path: "/skills",
       name: "skills",
-      component: () => import("@/pages/Skills.vue"),
+      component: () => import("@/views/SkillsView.vue"),
     },
     {
       path: "/languages",
       name: "languages",
-      component: () => import("@/pages/Languages.vue"),
+      component: () => import("@/views/LanguagesView.vue"),
     },
     {
       path: "/:pathMatch(.*)*",
       name: "not_found",
-      component: () => import("@/pages/NotFound.vue"),
+      component: () => import("@/views/NotFoundView.vue"),
     },
   ],
 });
