@@ -8,8 +8,7 @@ const props = defineProps({
   },
 });
 
-const negativeLevel = 10 - props.level;
-const index = 1;
+let index = 1;
 </script>
 
 <template>
@@ -22,7 +21,7 @@ const index = 1;
     ></span>
     <span
       class="level level--n"
-      v-for="(nl, k) in negativeLevel"
+      v-for="(nl, k) in (10 - props.level)"
       :key="k"
       :title="index++"
     ></span>

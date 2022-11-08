@@ -43,6 +43,8 @@ const { t } = useI18n();
   position: sticky;
   top: 0;
   background-color: var(--white);
+  border-bottom: 1px solid var(--black);
+
   .nav {
     display: flex;
     justify-content: space-between;
@@ -50,8 +52,8 @@ const { t } = useI18n();
     padding: 20px 0;
 
     .menu {
-      display: flex;
-      justify-content: center;
+      display: inline-flex;
+      justify-content: flex-start;
       align-items: center;
       gap: 20px;
       overflow-x: auto;
