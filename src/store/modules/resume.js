@@ -19,7 +19,10 @@ export default {
     },
     experiences: [
       {
-        company: "W3 Digital",
+        company: {
+          name: "W3 Digital",
+          logo: new URL("@/assets/img/experiences/w3-digital.jpg", import.meta.url).href,
+        },
         position: "Back-End Geliştirici",
         startDate: "2017/06",
         endDate: null,
@@ -27,7 +30,10 @@ export default {
           ".NET MVC ile projeler geliştirdi. Projelere API bağlantıları ve veri tabanı bağlantıları yaparak dinamik hale getirdi.",
       },
       {
-        company: "Genjitsu",
+        company: {
+          name: "Genjitsu",
+          logo: new URL("@/assets/img/experiences/genjitsu.jpg", import.meta.url).href,
+        },
         position: "Full Stack Geliştirici",
         startDate: "2019/11",
         endDate: "2020/08",
@@ -35,7 +41,10 @@ export default {
           "Bir girişim olan Genjitsu için web projelerinde full stack geliştirici olarak görev aldı.",
       },
       {
-        company: "W3 Digital",
+        company: {
+          name: "W3 Digital",
+          logo: new URL("@/assets/img/experiences/w3-digital.jpg", import.meta.url).href,
+        },
         position: "Q/A Tester",
         startDate: "2016/08",
         endDate: "2017/06",
@@ -44,7 +53,10 @@ export default {
     ],
     educations: [
       {
-        school: "Altınbaş Üniversitesi",
+        school: {
+          name: "Altınbaş Üniversitesi",
+          logo: new URL("@/assets/img/educations/altinbas-university.jpg", import.meta.url).href,
+        },
         area: "Yönetim Bilişim Sistemleri",
         studyType: "Lisans",
         startYear: "2020",
@@ -53,7 +65,10 @@ export default {
         note: "Fakülte birinciliği ile mezun oldu",
       },
       {
-        school: "İstanbul Üniversitesi",
+        school: {
+          name: "İstanbul Üniversitesi",
+          logo: new URL("@/assets/img/educations/istanbul-university.jpg", import.meta.url).href,
+        },
         area: "Bilgisayar Programcılığı",
         studyType: "Ön Lisans",
         startYear: "2017",
@@ -62,8 +77,10 @@ export default {
         note: null,
       },
       {
-        school:
-          "Bahçelievler Şehit Osman Yıldız Mesleki ve Teknik Anadolu Lisesi",
+        school: {
+          name: "Bahçelievler Şehit Osman Yıldız Mesleki ve Teknik Anadolu Lisesi",
+          logo: new URL("@/assets/img/educations/meb.jpg", import.meta.url).href,
+        },
         area: "Web Programcılığı",
         studyType: "Lise",
         startYear: "2013",
@@ -75,6 +92,7 @@ export default {
     skills: [
       {
         name: "HTML",
+        icon: new URL("@/assets/img/skills/html.jpg", import.meta.url).href,
         level: 8,
       },
       {
@@ -82,14 +100,17 @@ export default {
         children: [
           {
             name: "CSS3",
+            icon: new URL("@/assets/img/skills/css3.png", import.meta.url).href,
             level: 7,
           },
           {
             name: "SCSS",
+            icon: new URL("@/assets/img/skills/sass.png", import.meta.url).href,
             level: 5,
           },
           {
             name: "Bootstrap",
+            icon: new URL("@/assets/img/skills/bootstrap.png", import.meta.url).href,
             level: 5,
           },
         ],
@@ -99,38 +120,44 @@ export default {
         children: [
           {
             name: "Pure JavaScript",
+            icon: new URL("@/assets/img/skills/javascript.png", import.meta.url).href,
             level: 8,
           },
           {
             name: "jQuery",
+            icon: new URL("@/assets/img/skills/jquery.png", import.meta.url).href,
             level: 5,
           },
           {
             name: "Node.js",
+            icon: new URL("@/assets/img/skills/nodejs.png", import.meta.url).href,
             level: 7,
           },
           {
             name: "Vue.js",
+            icon: new URL("@/assets/img/skills/vuejs.png", import.meta.url).href,
             level: 6,
           },
         ],
       },
       {
         name: "C#",
-        level: 7,
         children: [
           {
             name: ".NET MVC",
+            icon: new URL("@/assets/img/skills/dotnet-mvc.png", import.meta.url).href,
             level: 8,
           },
           {
             name: ".NET Core",
+            icon: new URL("@/assets/img/skills/dotnet-core.png", import.meta.url).href,
             level: 6,
           },
         ],
       },
       {
         name: "PHP",
+        icon: new URL("@/assets/img/skills/php.png", import.meta.url).href,
         level: 6,
       },
       {
@@ -138,14 +165,17 @@ export default {
         children: [
           {
             name: "MSSQL",
+            icon: new URL("@/assets/img/skills/mssql.png", import.meta.url).href,
             level: 5,
           },
           {
             name: "MySQL",
+            icon: new URL("@/assets/img/skills/mysql.png", import.meta.url).href,
             level: 5,
           },
           {
             name: "MongoDB",
+            icon: new URL("@/assets/img/skills/mongodb.png", import.meta.url).href,
             level: 3,
           },
         ],
@@ -155,18 +185,17 @@ export default {
         children: [
           {
             name: "Handlebars",
+            icon: new URL("@/assets/img/skills/handlebars.png", import.meta.url).href,
             level: 4,
           },
           {
             name: "Pug",
-            level: 5,
-          },
-          {
-            name: "Jade",
+            icon: new URL("@/assets/img/skills/pug.png", import.meta.url).href,
             level: 5,
           },
           {
             name: "Twig",
+            icon: new URL("@/assets/img/skills/twig.png", import.meta.url).href,
             level: 4,
           },
         ],
@@ -176,10 +205,12 @@ export default {
         children: [
           {
             name: "WordPress",
+            icon: new URL("@/assets/img/skills/wordpress.png", import.meta.url).href,
             level: 4,
           },
           {
             name: "Sitecore",
+            icon: new URL("@/assets/img/skills/sitecore.png", import.meta.url).href,
             level: 2,
           },
         ],
@@ -189,14 +220,17 @@ export default {
         children: [
           {
             name: "GitHub",
+            icon: new URL("@/assets/img/skills/github.png", import.meta.url).href,
             level: 6,
           },
           {
             name: "TFS",
+            icon: new URL("@/assets/img/skills/azure-devops.png", import.meta.url).href,
             level: 6,
           },
           {
             name: "Bitbucket",
+            icon: new URL("@/assets/img/skills/bitbucket.png", import.meta.url).href,
             level: 4,
           },
         ],
@@ -262,6 +296,7 @@ export default {
     languages: [
       {
         name: "Turkish - Main",
+        flag: new URL("@/assets/img/languages/tr.svg", import.meta.url).href,
         levels: [
           {
             name: "Reading",
@@ -274,11 +309,12 @@ export default {
           {
             name: "Speaking",
             level: 8,
-          }
-        ]
+          },
+        ],
       },
       {
         name: "English - Elementary",
+        flag: new URL("@/assets/img/languages/en.svg", import.meta.url).href,
         levels: [
           {
             name: "Reading",
@@ -291,8 +327,8 @@ export default {
           {
             name: "Speaking",
             level: 4,
-          }
-        ]
+          },
+        ],
       },
     ],
   },

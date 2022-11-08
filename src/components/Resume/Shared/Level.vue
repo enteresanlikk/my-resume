@@ -25,7 +25,6 @@ const index = 1;
   display: inline-block;
   display: inline-flex;
   gap: 3px;
-  padding: 0 10px;
 
   .level {
     width: 10px;
