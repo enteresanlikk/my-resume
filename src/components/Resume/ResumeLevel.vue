@@ -21,7 +21,7 @@ let index = 1;
     ></span>
     <span
       class="level level--n"
-      v-for="(nl, k) in (10 - props.level)"
+      v-for="(nl, k) in 10 - props.level"
       :key="k"
       :title="index++"
     ></span>
@@ -38,11 +38,11 @@ let index = 1;
     height: 10px;
     border-radius: 50%;
     &--p {
-      background-color: var(--black);
+      background-color: $black;
     }
 
     &--n {
-      background-color: var(--gray);
+      background-color: $gray;
     }
   }
 }

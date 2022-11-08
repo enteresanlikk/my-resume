@@ -6,8 +6,6 @@ import i18n from "@/utils/i18n";
 
 import App from "@/App.vue";
 
-import "@/assets/css/main.css";
-
 const app = createApp(App);
 app.use(router);
 app.use(store);

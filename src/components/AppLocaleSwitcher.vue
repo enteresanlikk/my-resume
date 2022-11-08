@@ -30,8 +30,8 @@ watch(
 .locale-switcher {
   select {
     border: 0;
-    border-bottom: 1px solid var(--black);
-    color: var(--black);
+    border-bottom: 1px solid var$black;
+    color: $black;
   }
 }
 </style>

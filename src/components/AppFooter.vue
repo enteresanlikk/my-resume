@@ -20,7 +20,7 @@ const year = computed(() =>
 
 <style lang="scss">
 .footer {
-  padding: 20px 0;
+  padding: 15px 0;
 
   &--description {
     display: flex;
