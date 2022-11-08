@@ -7,33 +7,64 @@ const store = useStore();
 <template>
   <header class="header">
     <nav class="header--nav container">
-      <button class="header--nav--mobile-btn" @click="store.dispatch('toggleMenuOpened')">
-        {{ store.getters.getMenuOpened ? 'X' : 'menu' }}
+      <button
+        class="header--nav--mobile-btn"
+        @click="store.dispatch('toggleMenuOpened')"
+      >
+        {{ store.getters.getMenuOpened ? "X" : "menu" }}
       </button>
-      <ul class="header--nav--menu list-unstyled" :class="store.getters.getMenuOpened ? 'active' : ''">
+      <ul
+        class="header--nav--menu list-unstyled"
+        :class="store.getters.getMenuOpened ? 'active' : ''"
+      >
         <li class="header--nav--menu--item">
-          <router-link :to="{ name: 'home' }" class="header--nav--menu--item--link" :title="$t('header.home')" @click="store.dispatch('toggleMenuOpened')">
-            {{ $t('header.home') }}
+          <router-link
+            :to="{ name: 'home' }"
+            class="header--nav--menu--item--link"
+            :title="$t('header.home')"
+            @click="store.dispatch('toggleMenuOpened')"
+          >
+            {{ $t("header.home") }}
           </router-link>
         </li>
         <li class="header--nav--menu--item">
-          <router-link :to="{ name: 'experiences' }" class="header--nav--menu--item--link" :title="$t('header.experiences')" @click="store.dispatch('toggleMenuOpened')">
-            {{ $t('header.experiences') }}
+          <router-link
+            :to="{ name: 'experiences' }"
+            class="header--nav--menu--item--link"
+            :title="$t('header.experiences')"
+            @click="store.dispatch('toggleMenuOpened')"
+          >
+            {{ $t("header.experiences") }}
           </router-link>
         </li>
         <li class="header--nav--menu--item">
-          <router-link :to="{ name: 'educations' }" class="header--nav--menu--item--link" :title="$t('header.educations')" @click="store.dispatch('toggleMenuOpened')">
-            {{ $t('header.educations') }}
+          <router-link
+            :to="{ name: 'educations' }"
+            class="header--nav--menu--item--link"
+            :title="$t('header.educations')"
+            @click="store.dispatch('toggleMenuOpened')"
+          >
+            {{ $t("header.educations") }}
           </router-link>
         </li>
         <li class="header--nav--menu--item">
-          <router-link :to="{ name: 'skills' }" class="header--nav--menu--item--link" :title="$t('header.skills')" @click="store.dispatch('toggleMenuOpened')">
-            {{ $t('header.skills') }}
+          <router-link
+            :to="{ name: 'skills' }"
+            class="header--nav--menu--item--link"
+            :title="$t('header.skills')"
+            @click="store.dispatch('toggleMenuOpened')"
+          >
+            {{ $t("header.skills") }}
           </router-link>
         </li>
         <li class="header--nav--menu--item">
-          <router-link :to="{ name: 'languages' }" class="header--nav--menu--item--link" :title="$t('header.languages')" @click="store.dispatch('toggleMenuOpened')">
-            {{ $t('header.languages') }}
+          <router-link
+            :to="{ name: 'languages' }"
+            class="header--nav--menu--item--link"
+            :title="$t('header.languages')"
+            @click="store.dispatch('toggleMenuOpened')"
+          >
+            {{ $t("header.languages") }}
           </router-link>
         </li>
       </ul>

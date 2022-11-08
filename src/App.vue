@@ -68,8 +68,4 @@ section {
     }
   }
 }
-
-.flex {
-  display: flex;
-}
 </style>
