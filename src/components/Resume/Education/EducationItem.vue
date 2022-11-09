@@ -17,6 +17,7 @@ defineProps({
         :src="item.school.logo"
         :alt="item.school.name"
         class="education--item--logo"
+        loading="lazy"
       />
     </div>
     <div class="education--item--right">

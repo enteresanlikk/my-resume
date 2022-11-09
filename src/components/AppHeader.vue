@@ -11,7 +11,9 @@ const store = useStore();
         class="header--nav--mobile-btn"
         @click="store.dispatch('toggleMenuOpened')"
       >
-        {{ store.getters.getMenuOpened ? "X" : "menu" }}
+        <FontAwesomeIcon
+          :icon="store.getters.getMenuOpened ? 'times' : 'bars'"
+        />
       </button>
       <ul
         class="header--nav--menu list-unstyled"
@@ -105,6 +107,7 @@ const store = useStore();
       margin: 0;
       padding: 0;
       gap: 15px;
+      overflow: auto;
       @include breakpoint(xs) {
         display: none;
         position: fixed;
@@ -112,13 +115,14 @@ const store = useStore();
         height: 100%;
         top: 0;
         left: 0;
-        padding-top: $headerHeight;
+        padding: $headerHeight 0;
         flex-direction: column;
         justify-content: center;
-        background: rgba($white, 0.9);
+        background: $white;
       }
       &.active {
         display: flex;
+        justify-content: flex-start;
       }
     }
     &--menu--item {

@@ -18,6 +18,7 @@ defineProps({
         :src="item.icon"
         :alt="item.name"
         class="skill--item--logo"
+        loading="lazy"
       />
 
       <h2 class="skill--item--name">
@@ -38,6 +39,7 @@ defineProps({
           :src="child.icon"
           :alt="child.name"
           class="skill--item--logo"
+          loading="lazy"
         />
 
         <h3 class="skill--item--name">

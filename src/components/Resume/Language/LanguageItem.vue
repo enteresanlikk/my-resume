@@ -19,6 +19,7 @@ defineProps({
         :src="item.flag"
         :alt="item.name"
         class="language--item--logo"
+        loading="lazy"
       />
     </div>
 

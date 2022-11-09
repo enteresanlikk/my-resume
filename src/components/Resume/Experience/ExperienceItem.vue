@@ -17,6 +17,7 @@ defineProps({
         :src="item.company.logo"
         :alt="item.company.name"
         class="experience--item--logo"
+        loading="lazy"
       />
     </div>
     <div class="experience--item--right">
