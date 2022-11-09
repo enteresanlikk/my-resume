@@ -8,18 +8,23 @@ export default createStore({
     locale:
       localStorage.getItem(i18nConstants.localeStorageKey) ||
       i18nConstants.defaultLocale,
-    isMenuOpened: false,
+    isMenuOpen: false,
+    isLoading: false,
   },
   getters: {
-    getLocale: (state) => state.locale,
-    getMenuOpened: (state) => state.isMenuOpened,
+    locale: (state) => state.locale,
+    isMenuOpen: (state) => state.isMenuOpen,
+    isLoading: (state) => state.isLoading,
   },
   mutations: {
     setLocale(state, locale) {
       state.locale = locale;
     },
-    toggleMenuOpened(state) {
-      state.isMenuOpened = !state.isMenuOpened;
+    setMenuOpen(state, menuOpen) {
+      state.isMenuOpen = menuOpen;
+    },
+    setLoading(state, isLoading) {
+      state.isLoading = isLoading;
     },
   },
   actions: {
@@ -27,8 +32,17 @@ export default createStore({
       localStorage.setItem(i18nConstants.localeStorageKey, locale);
       commit("setLocale", locale);
     },
-    toggleMenuOpened({ commit }) {
-      commit("toggleMenuOpened");
+    closeMenu({ commit }) {
+      commit("setMenuOpen", false);
+    },
+    openMenu({ commit }) {
+      commit("setMenuOpen", true);
+    },
+    showLoading({ commit }) {
+      commit("setLoading", true);
+    },
+    hideLoading({ commit }) {
+      commit("setLoading", false);
     },
   },
   modules: {

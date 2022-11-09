@@ -1,4 +1,5 @@
 import { createRouter, createWebHashHistory } from "vue-router";
+import store from "@/store";
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -36,10 +37,22 @@ const router = createRouter({
       component: () => import("@/views/NotFoundView.vue"),
     },
   ],
+  scrollBehavior() {
+    return {
+      top: 0,
+    };
+  },
 });
 
 router.beforeEach((to, from, next) => {
+  store.dispatch("showLoading");
+  store.dispatch("closeMenu");
+
   next();
+});
+
+router.afterEach(() => {
+  store.dispatch("hideLoading");
 });
 
 export default router;

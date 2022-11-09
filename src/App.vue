@@ -1,9 +1,12 @@
 <script setup>
 import Header from "@/components/AppHeader.vue";
 import Footer from "@/components/AppFooter.vue";
+import Loading from "@/components/AppLoading.vue";
 </script>
 
 <template>
+  <Loading />
+
   <Header />
 
   <main class="main">

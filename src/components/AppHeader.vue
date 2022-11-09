@@ -7,24 +7,24 @@ const store = useStore();
 <template>
   <header class="header">
     <nav class="header--nav container">
-      <button
+      <span class="header--nav--logo"> BD </span>
+      <span
         class="header--nav--mobile-btn"
-        @click="store.dispatch('toggleMenuOpened')"
+        @click="
+          store.dispatch(store.getters.isMenuOpen ? 'closeMenu' : 'openMenu')
+        "
       >
-        <FontAwesomeIcon
-          :icon="store.getters.getMenuOpened ? 'times' : 'bars'"
-        />
-      </button>
+        <FontAwesomeIcon :icon="store.getters.isMenuOpen ? 'times' : 'bars'" />
+      </span>
       <ul
         class="header--nav--menu list-unstyled"
-        :class="store.getters.getMenuOpened ? 'active' : ''"
+        :class="store.getters.isMenuOpen ? 'active' : ''"
       >
         <li class="header--nav--menu--item">
           <router-link
             :to="{ name: 'home' }"
             class="header--nav--menu--item--link"
             :title="$t('header.home')"
-            @click="store.dispatch('toggleMenuOpened')"
           >
             {{ $t("header.home") }}
           </router-link>
@@ -34,7 +34,6 @@ const store = useStore();
             :to="{ name: 'experiences' }"
             class="header--nav--menu--item--link"
             :title="$t('header.experiences')"
-            @click="store.dispatch('toggleMenuOpened')"
           >
             {{ $t("header.experiences") }}
           </router-link>
@@ -44,7 +43,6 @@ const store = useStore();
             :to="{ name: 'educations' }"
             class="header--nav--menu--item--link"
             :title="$t('header.educations')"
-            @click="store.dispatch('toggleMenuOpened')"
           >
             {{ $t("header.educations") }}
           </router-link>
@@ -54,7 +52,6 @@ const store = useStore();
             :to="{ name: 'skills' }"
             class="header--nav--menu--item--link"
             :title="$t('header.skills')"
-            @click="store.dispatch('toggleMenuOpened')"
           >
             {{ $t("header.skills") }}
           </router-link>
@@ -64,7 +61,6 @@ const store = useStore();
             :to="{ name: 'languages' }"
             class="header--nav--menu--item--link"
             :title="$t('header.languages')"
-            @click="store.dispatch('toggleMenuOpened')"
           >
             {{ $t("header.languages") }}
           </router-link>
@@ -80,21 +76,29 @@ const store = useStore();
   height: $headerHeight;
   position: sticky;
   top: 0;
-  z-index: 10000;
+  z-index: 10;
   background: $white;
   &--nav {
     display: flex;
     width: 100%;
     height: inherit;
     align-items: center;
-    justify-content: space-between;
+    gap: 20px;
+    @include breakpoint(xs) {
+      justify-content: space-between;
+    }
+
+    &--logo {
+      font-size: 2em;
+    }
+
     &--mobile-btn {
       z-index: 1;
       background: transparent;
       border: 0;
       outline: 0;
       color: $black;
-      font-size: 1.7em;
+      font-size: 2em;
       display: none;
       @include breakpoint(xs) {
         display: flex;
