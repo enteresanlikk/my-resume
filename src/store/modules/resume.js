@@ -275,14 +275,6 @@ export default {
         name: "Other",
         children: [
           {
-            name: "CQRS",
-            level: 2,
-          },
-          {
-            name: "MediatR",
-            level: 2,
-          },
-          {
             name: "Docker",
             level: 1,
           },
@@ -292,7 +284,7 @@ export default {
           },
           {
             name: "Firebase",
-            level: 2,
+            level: 1,
           },
           {
             name: "Arduino",
@@ -312,11 +304,11 @@ export default {
           },
           {
             name: "Python",
-            level: 3,
+            level: 2,
           },
           {
             name: "TypeScript",
-            level: 4,
+            level: 3,
           },
           {
             name: "Data Science",
