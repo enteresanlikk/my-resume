@@ -15,6 +15,14 @@ export default {
           name: "LinkedIn",
           link: "https://www.linkedin.com/in/bilaldmr/",
         },
+        {
+          name: "HackerRank",
+          link: "https://www.hackerrank.com/blldemir",
+        },
+        {
+          name: "Codewars",
+          link: "https://www.codewars.com/users/enteresanlikk",
+        },
       ],
     },
     experiences: [
