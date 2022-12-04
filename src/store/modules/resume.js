@@ -4,7 +4,7 @@ export default {
     profile: {
       image: "https://avatars.githubusercontent.com/u/23117378?v=4",
       name: "Bilal Demir",
-      title: "Full Stack Developer",
+      title: "Web Developer",
       bio: "He was born in <b>Istanbul</b> in <b>1999</b> and continues to live in Istanbul. He was interested in <b>models</b>, <b>origami</b> and <b>electronic devices</b> until high school and developed projects of his own. He studied <b>Web Programming</b> in high school. He initially worked in the <b>Q/A</b> team where he completed his compulsory internship training in the last year of high school. After graduating from high school, he moved to the software team. During his transition to the software team, he worked as a <b>back-end developer</b>. He won the <b>Computer Programming Department</b> thanks to his high school ranking and continued to work at the same time. He took part as a <b>full stack developer</b> in the initiative of his friend whom he met from university. After completing his associate degree education, he prepared for <b>VPE(DGS)</b> for one year and won the <b>Management Information Systems Department</b>. While completing his undergraduate education, he continued to work in the software team at the same time. He finished his undergraduate education with the <b>first place in the faculty</b> and continued to work in the software team after graduation.<br><u>He still continues to work actively and develop projects.</u>",
       socialMedias: [
         {
