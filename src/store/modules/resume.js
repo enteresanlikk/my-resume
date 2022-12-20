@@ -71,7 +71,7 @@ export default {
     educations: [
       {
         school: {
-          name: "Altınbaş University",
+          name: "Altinbas University",
           logo: new URL(
             "@/assets/img/educations/altinbas-university.jpg",
             import.meta.url
@@ -86,7 +86,7 @@ export default {
       },
       {
         school: {
-          name: "İstanbul University",
+          name: "Istanbul University",
           logo: new URL(
             "@/assets/img/educations/istanbul-university.jpg",
             import.meta.url
@@ -101,7 +101,7 @@ export default {
       },
       {
         school: {
-          name: "Bahçelievler Martyr Osman Yıldız Vocational and Technical Anatolian High School",
+          name: "Bahcelievler Martyr Osman Yildiz Vocational and Technical Anatolian High School",
           logo: new URL("@/assets/img/educations/meb.jpg", import.meta.url)
             .href,
         },
