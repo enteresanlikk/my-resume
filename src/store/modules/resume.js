@@ -367,6 +367,124 @@ export default {
         ],
       },
     ],
+    certificates: [
+      {
+        company: {
+          name: "Udemy",
+          logo: new URL(
+            "@/assets/img/certificates/udemy.jpg",
+            import.meta.url
+          ).href,
+        },
+        name: "A'dan Z'ye Docker",
+        date: "12-2022",
+        link: "https://www.udemy.com/certificate/UC-523b496c-2bbf-4b0e-abb4-7b5b0aa0568a/",
+        uniqueId: "UC-523b496c-2bbf-4b0e-abb4-7b5b0aa0568a",
+      },
+      {
+        company: {
+          name: "Udemy",
+          logo: new URL(
+            "@/assets/img/certificates/udemy.jpg",
+            import.meta.url
+          ).href,
+        },
+        name: "Secure .Net Microservices with IdentityServer4 OAuth2,OpenID",
+        date: "12-2022",
+        link: "https://www.udemy.com/certificate/UC-9c110899-f022-4524-a0f3-8b75b8b00b5d/",
+        uniqueId: "UC-9c110899-f022-4524-a0f3-8b75b8b00b5d",
+      },
+      {
+        company: {
+          name: "Altinbas University",
+          logo: new URL(
+            "@/assets/img/certificates/altinbas-university.jpg",
+            import.meta.url
+          ).href,
+        },
+        name: "Bilişim Sektöründe Sistem Mühendisliği",
+        date: "05-2022",
+        link: "",
+        uniqueId: "UN_041095516000013333",
+      },
+      {
+        company: {
+          name: "Udemy",
+          logo: new URL(
+            "@/assets/img/certificates/udemy.jpg",
+            import.meta.url
+          ).href,
+        },
+        name: "Kurumsal Mimariler İçin Sql Server Veri Tabanı Tasarımı",
+        date: "10-2019",
+        link: "https://www.udemy.com/certificate/UC-M6691FD9/",
+        uniqueId: "UC-M6691FD9",
+      },
+      {
+        company: {
+          name: "Udemy",
+          logo: new URL(
+            "@/assets/img/certificates/udemy.jpg",
+            import.meta.url
+          ).href,
+        },
+        name: "Corso MongoDB: basi del database no-sql più usato al mondo",
+        date: "05-2018",
+        link: "https://www.udemy.com/certificate/UC-ZYR3Q2P2/",
+        uniqueId: "UC-ZYR3Q2P2",
+      },
+      {
+        company: {
+          name: "Udemy",
+          logo: new URL(
+            "@/assets/img/certificates/udemy.jpg",
+            import.meta.url
+          ).href,
+        },
+        name: "JavaScript Essentials 2020 Mini Course",
+        date: "04-2018",
+        link: "https://www.udemy.com/certificate/UC-CAI1TOJH/",
+        uniqueId: "UC-CAI1TOJH",
+      },
+      {
+        company: {
+          name: "Udemy",
+          logo: new URL(
+            "@/assets/img/certificates/udemy.jpg",
+            import.meta.url
+          ).href,
+        },
+        name: "Sıfırdan Her Yönüyle JavaScript & Node.JS",
+        date: "02-2018",
+        link: "https://www.udemy.com/certificate/UC-3Z0MKK9I/",
+        uniqueId: "UC-3Z0MKK9I",
+      },
+      {
+        company: {
+          name: "Bilgeİş",
+          logo: new URL(
+            "@/assets/img/certificates/bilgeis.jpg",
+            import.meta.url
+          ).href,
+        },
+        name: "Web Tasarımının Temelleri HTML ve CSS",
+        date: "09-2017",
+        link: "",
+        uniqueId: "f6c8b5e0-96f0-11e7-baa3-2940c4eefe90",
+      },
+      {
+        company: {
+          name: "HackerRank",
+          logo: new URL(
+            "@/assets/img/certificates/hackerrank.jpg",
+            import.meta.url
+          ).href,
+        },
+        name: "All Certificates",
+        date: "",
+        link: "https://www.hackerrank.com/certificates/4eb7e7787172",
+      }
+    ],
   },
   getters: {
     getProfile: (state) => state.profile,
@@ -374,5 +492,6 @@ export default {
     getEducations: (state) => state.educations,
     getSkills: (state) => state.skills,
     getLanguages: (state) => state.languages,
+    getCertificates: (state) => state.certificates,
   },
 };

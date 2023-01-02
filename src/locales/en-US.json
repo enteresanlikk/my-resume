@@ -4,7 +4,8 @@
         "experiences": "Experiences",
         "educations": "Educations",
         "skills": "Skills",
-        "languages": "Languages"
+        "languages": "Languages",
+        "certificates": "Certificates"
     },
     "not_found": {
         "title": "Page not found",

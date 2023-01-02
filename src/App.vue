@@ -29,6 +29,7 @@ html {
   word-wrap: break-word;
   font-family: "Arial", sans-serif;
   color: $black;
+  line-height: 1.3;
 }
 
 .container {

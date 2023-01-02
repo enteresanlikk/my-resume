@@ -65,6 +65,15 @@ const store = useStore();
             {{ $t("header.languages") }}
           </router-link>
         </li>
+        <li class="header--nav--menu--item">
+          <router-link
+            :to="{ name: 'certificates' }"
+            class="header--nav--menu--item--link"
+            :title="$t('header.certificates')"
+          >
+            {{ $t("header.certificates") }}
+          </router-link>
+        </li>
       </ul>
     </nav>
   </header>
