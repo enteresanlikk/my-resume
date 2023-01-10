@@ -7,7 +7,6 @@ const store = useStore();
 <template>
   <header class="header">
     <nav class="header--nav container">
-      <span class="header--nav--logo"> BD </span>
       <span
         class="header--nav--mobile-btn"
         @click="

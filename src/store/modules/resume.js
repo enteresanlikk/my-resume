@@ -5,7 +5,7 @@ export default {
       image: "https://avatars.githubusercontent.com/u/23117378?v=4",
       name: "Bilal Demir",
       title: "Web Developer",
-      bio: "He was born in <b>Istanbul</b> in <b>1999</b> and continues to live in Istanbul. He was interested in <b>models</b>, <b>origami</b> and <b>electronic devices</b> until high school and developed projects of his own. He studied <b>Web Programming</b> in high school. He initially worked in the <b>Q/A</b> team where he completed his compulsory internship training in the last year of high school. After graduating from high school, he moved to the software team. During his transition to the software team, he worked as a <b>back-end developer</b>. He won the <b>Computer Programming Department</b> thanks to his high school ranking and continued to work at the same time. He took part as a <b>full stack developer</b> in the initiative of his friend whom he met from university. After completing his associate degree education, he prepared for <b>VPE(DGS)</b> for one year and won the <b>Management Information Systems Department</b>. While completing his undergraduate education, he continued to work in the software team at the same time. He finished his undergraduate education with the <b>first place in the faculty</b> and continued to work in the software team after graduation.<br><u>He still continues to work actively and develop projects.</u>",
+      bio: "He was born in Istanbul in 1999 and continues to live in Istanbul. He graduated from high school Web Programming, Istanbul University Computer Programming and Altinbas University Management Information Systems. Developed web applications using C#, PHP and JavaScript. He continues to develop professionally with .NET MVC. He is also working on Node.js and Vue.js. He developed projects on payment systems. As a hobby, he likes to test himself by solving questions on HackerRank and Codewars.",
       socialMedias: [
         {
           name: "GitHub",
@@ -35,7 +35,7 @@ export default {
           ).href,
         },
         position: "Back-End Developer",
-        startDate: "2017/06",
+        startDate: "06-2017",
         endDate: null,
         summary:
           "He developed projects with .NET MVC. It made it dynamic by making API connections and database connections to the projects.",
@@ -49,8 +49,8 @@ export default {
           ).href,
         },
         position: "Full Stack Developer",
-        startDate: "2019/11",
-        endDate: "2020/08",
+        startDate: "11-2019",
+        endDate: "08-2020",
         summary:
           "He worked as a full stack developer in web projects for Genjitsu, a startup.",
       },
@@ -63,8 +63,8 @@ export default {
           ).href,
         },
         position: "Q/A Tester",
-        startDate: "2016/08",
-        endDate: "2017/06",
+        startDate: "08-2016",
+        endDate: "06-2017",
         summary: "He did the end-user tests and data entry.",
       },
     ],
@@ -284,6 +284,14 @@ export default {
         children: [
           {
             name: "Docker",
+            level: 4,
+          },
+          {
+            name: "Microservices",
+            level: 3,
+          },
+          {
+            name: "Azure Service Bus",
             level: 1,
           },
           {
@@ -368,6 +376,19 @@ export default {
       },
     ],
     certificates: [
+      {
+        company: {
+          name: "Udemy",
+          logo: new URL(
+            "@/assets/img/certificates/udemy.jpg",
+            import.meta.url
+          ).href,
+        },
+        name: ".NET Core Microservices - The Complete Guide (.NET 6 MVC)",
+        date: "01-2022",
+        link: "https://www.udemy.com/certificate/UC-d6cbe7f5-1abf-40f1-8270-043a17cdb402/",
+        uniqueId: "UC-d6cbe7f5-1abf-40f1-8270-043a17cdb402",
+      },
       {
         company: {
           name: "Udemy",
